@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./styles.css">
+
+
+    <title>Form Designer</title>
+    
+</head>
+<body>
+    <nav class="nav">
+        <div>Form designer</div>
+        <button onclick="saveForm()">Save</button>
+        
+    </nav>
+    <p class="component">Components</p>
+    <div class='container'>
+      
+    <div class='container-sidebar'>
+        
+        <button onclick="addNewElement('input')">Add Input</button>
+        <button onclick="addNewElement('select')">Add Select</button>
+        <button onclick="addNewElement('textarea')">Add Textarea</button>
+       
+    
+    </div>
+    <div id="form-container">
+        <!-- Form elements will be dynamically added here -->
+    </div>
+</div>
+   
+   <script src="./script.js"></script>
+</body>
+</html>

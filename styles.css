@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+#form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 0 3rem;
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    border-radius: 4px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.delete-btn {
+    color: red;
+    cursor: pointer;
+}
+
+.container-sidebar {
+    background-color: antiquewhite;
+    height: 90vh;
+    padding-top: 0.7rem;
+}
+
+.container-sidebar button {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    width: 12rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.container-sidebar button::after {
+    content: '+';
+    position: absolute;
+    left: 90%;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.nav button {
+    padding: .5rem 1rem;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    transition: background-color 0.3s;
+}
+
+.nav button:active {
+    background-color: rgb(215, 211, 205);
+}
+
+.nav div {
+    font-size: large;
+    font-weight: 200;
+    padding-left: 28px;
+}
+
+button {
+    margin: 10px;
+}
+
+.nav {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(232, 171, 171);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.component {
+    background-color: rgb(237, 194, 194);
+    margin: 0;
+    width: 13.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.form-data {
+    padding: 1rem;
+}
+
+.form-element {
+    margin: 1rem;
+}
+
+.type {
+    width: 100%;
+    padding: 4px;
+}
+
+.select {
+    width: 100%;
+    /* padding: 2px; */
+}
